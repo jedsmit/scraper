@@ -10,9 +10,16 @@ const PORT = 3000;
 const app = express();
 
 app.use(express.urlencoded({ extended: true }));
-app, use(express, json());
+app, use(express.json());
 
 app.use(express.static("public"));
 
-// Connect to the Mongo DB
+// Set Handlebars
+var exphbs = require("express-handlebars");
+
+app.engine("handlebars", exphbs({ defaultLayout: "main" }));
+app.set("view engine", "handlebars");
+
+
+// Connect to Mongo DB
 mongoose.connect("mongodb://localhost/scraper", { useNewUrlParser: true })
