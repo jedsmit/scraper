@@ -19,10 +19,12 @@
   },
   "homepage": "https://github.com/jedsmit/scraper#readme",
   "dependencies": {
+    "@handlebars/allow-prototype-access": "^1.0.3",
     "axios": "^0.19.2",
     "cheerio": "^1.0.0-rc.3",
     "express": "^4.17.1",
     "express-handlebars": "^3.1.0",
+    "handlebars": "^4.7.3",
     "mongoose": "^5.8.11",
     "morgan": "^1.9.1"
   }
