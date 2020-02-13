@@ -1,7 +1,12 @@
-{{#each found}}
+<div class="container">
 
-<a href={{this.link}}>
-    <h4>Title: {{this.title}}</h4>
-</a>
+    {{#each found}}
 
-{{/each}}
+    <a href={{this.link}}>
+        <h4>{{this.title}}</h4>
+    </a>
+    <br>
+    <p>{{this.excerpt}}</p>
+    {{/each}}
+
+</div>
